@@ -220,5 +220,39 @@ Store one seed. No support. No password recovery.</p>
 
 <h2>🔒 HERCULES CRYPTO – Your Seed Safe.</h2>
 
+<script>
+  function setupForm(formId, messageId) {
+    const form = document.getElementById(formId);
+    const message = document.getElementById(messageId);
+
+    if (form && message) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            form.style.display = 'none';
+            message.style.display = 'block';
+          } else {
+            alert("Something went wrong. Please try again later.");
+          }
+        });
+      });
+    }
+  }
+
+  // Ejecutar setupForm para ambos formularios una vez cargado el DOM
+  document.addEventListener('DOMContentLoaded', function () {
+    setupForm("form1", "message1");
+    setupForm("form2", "message2");
+  });
+</script>
+  
 </body>
 </html>

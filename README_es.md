@@ -1,4 +1,4 @@
-# HÉRCULES CRYPTO PENDRIVE – Edición FreeWare
+# HERCULES CRYPTO PENDRIVE – Edición FreeWare
 
 📘 Este README está disponible en:
 - [English](README.md)
@@ -33,7 +33,7 @@ Esta edición FreeWare es:
 
 ## ⚙️ Requisitos
 
-- Sistema operativo: [especificar: Windows / Linux / etc.]
+- Sistema operativo: Windows
 - No requiere conexión a la nube.
 - Portátil, sin instalación compleja.
 - Uso completamente local.
@@ -71,4 +71,4 @@ Para novedades o versión Premium:
 
 ---
 
-## 🔒 HÉRCULES CRYPTO – Your Seed Safe.
+## 🔒 HERCULES CRYPTO – Your Seed Safe.

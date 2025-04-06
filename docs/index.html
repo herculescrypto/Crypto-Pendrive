@@ -108,7 +108,48 @@
 <h2>📥 Download</h2>
 <p><strong>Download HERCULES – FreeWare Edition</strong><br>
 Store one seed. No support. No password recovery.</p>
-<p><a href="https://github.com/herculescrypto/Crypto-Pendrive/releases/latest" class="button">Download FreeWare</a></p>
+
+<!-- 📧 FORMULARIO FORMSPREE -->
+<div class="center">
+  <form id="cryptoForm" action="https://formspree.io/f/xjkypyak" method="POST">
+    <label for="email">Enter your email to get the FreeWare:</label><br>
+    <input type="email" name="email" id="email" required style="padding: 10px; width: 250px; margin-top: 10px;"><br>
+    <button type="submit" class="button" style="margin-top: 15px;">Get Download Link</button>
+  </form>
+
+  <div id="successMessage" style="display:none; margin-top: 20px; font-weight: bold;">
+    ✅ Thanks! Check your email inbox for news about HERCULES CRYPTO PENDRIVE.<br>
+    <a href="https://github.com/herculescrypto/Crypto-Pendrive/releases/latest" target="_blank">
+      Or click here to download directly →
+    </a>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('cryptoForm');
+  const message = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.style.display = 'none';
+        message.style.display = 'block';
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    });
+  });
+</script>
+
+
 <h2>🔐 Key Features</h2>
 <ul>
   <li>AES-class encryption (SSG M256) with a 16-character password.</li>
@@ -142,7 +183,22 @@ encryption and decryption features will be disabled automatically.</strong></p>
 <h2>📥 Download</h2>
 <p><strong>Download HERCULES – FreeWare Edition</strong><br>
 Store one seed. No support. No password recovery.</p>
-<p><a href="https://github.com/herculescrypto/Crypto-Pendrive/releases/latest" class="button">Download FreeWare</a></p>
+
+<!-- 📧 FORMULARIO FORMSPREE -->
+<div class="center">
+  <form id="cryptoForm" action="https://formspree.io/f/xjkypyak" method="POST">
+    <label for="email">Enter your email to get the FreeWare:</label><br>
+    <input type="email" name="email" id="email" required style="padding: 10px; width: 250px; margin-top: 10px;"><br>
+    <button type="submit" class="button" style="margin-top: 15px;">Get Download Link</button>
+  </form>
+
+  <div id="successMessage" style="display:none; margin-top: 20px; font-weight: bold;">
+    ✅ Thanks! Check your email inbox for news about HERCULES CRYPTO PENDRIVE.<br>
+    <a href="https://github.com/herculescrypto/Crypto-Pendrive/releases/latest" target="_blank">
+      Or click here to download directly →
+    </a>
+  </div>
+</div>
 
 <h2>❗ Disclaimer</h2>
 <p>This is FreeWare software:</p>

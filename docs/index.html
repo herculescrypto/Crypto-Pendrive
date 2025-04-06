@@ -148,6 +148,30 @@ Store one seed. No support. No password recovery.</p>
     });
   });
 </script>
+  
+<script>
+  const form2 = document.getElementById('cryptoForm2');
+  const message2 = document.getElementById('successMessage2');
+
+  form2.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form2);
+    fetch(form2.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form2.style.display = 'none';
+        message2.style.display = 'block';
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    });
+  });
+</script>
 
 
 <h2>🔐 Key Features</h2>
@@ -186,7 +210,7 @@ Store one seed. No support. No password recovery.</p>
 
 <!-- 📧 FORMULARIO FORMSPREE -->
 <div class="center">
-  <form id="cryptoForm" action="https://formspree.io/f/xjkypyak" method="POST">
+  <form id="cryptoForm2" action="https://formspree.io/f/xjkypyak" method="POST">
     <label for="email">Enter your email to get the FreeWare:</label><br>
     <input type="email" name="email" id="email" required style="padding: 10px; width: 250px; margin-top: 10px;"><br>
     <button type="submit" class="button" style="margin-top: 15px;">Get Download Link</button>

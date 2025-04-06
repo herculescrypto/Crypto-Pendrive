@@ -1,6 +1,6 @@
 # Crypto-Pendrive
 Ultra-secure software for storing a single BIP39 seed phrase. Offline, encrypted, and error-proof.
-# HÉRCULES CRYPTO PENDRIVE – FreeWare Edition
+# HERCULES CRYPTO PENDRIVE – FreeWare Edition
 
 📘 This README is available in:
 - [English](README.md) (you are here)
@@ -73,4 +73,4 @@ For future updates or the Premium version:
 
 ---
 
-## 🔒 HÉRCULES CRYPTO – Your Seed Safe.
+## 🔒 HERCULES CRYPTO – Your Seed Safe.
